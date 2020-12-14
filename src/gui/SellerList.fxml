@@ -28,14 +28,14 @@
             </Button>
         </items>
       </ToolBar>
-      <TableView fx:id="tbVSeller" prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="tbVSeller" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
         <columns>
-            <TableColumn fx:id="tbColumnId" prefWidth="75.0" text="Id" />
-          <TableColumn fx:id="tbColumnName" prefWidth="75.0" text="Name" />
-          <TableColumn fx:id="tbColumnEmail" prefWidth="75.0" text="Email" />
-            <TableColumn fx:id="tbColumnBDate" prefWidth="75.0" text="BirthDate" />
-            <TableColumn fx:id="tbColumnBSalary" prefWidth="75.0" text="Salary" />
-            <TableColumn fx:id="tbColumnDepartment" prefWidth="75.0" text="Department" />
+            <TableColumn fx:id="tbColumnId" editable="false" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="50.0" text="Id" />
+          <TableColumn fx:id="tbColumnName" editable="false" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="150.0" text="Name" />
+          <TableColumn fx:id="tbColumnEmail" editable="false" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="200.0" text="Email" />
+            <TableColumn fx:id="tbColumnBDate" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="100.0" text="BirthDate" />
+            <TableColumn fx:id="tbColumnBSalary" editable="false" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="75.0" text="Salary" />
+            <TableColumn fx:id="tbColumnDepartment" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="75.0" text="Department" />
         </columns>
       </TableView>
    </children>
