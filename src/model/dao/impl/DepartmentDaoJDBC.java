@@ -57,10 +57,7 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 			st.setString(1, obj.getName());
 			st.setInt(2,obj.getId());
 			
-			int arrowsAffected = st.executeUpdate();
-			if(arrowsAffected > 0) {
-				System.out.println("Executed update id: "+ obj.getId());
-			}
+			st.executeUpdate();
 		}
 		catch(SQLException e) {
 			throw new DbException(e.getMessage());
@@ -79,15 +76,7 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 			 
 			 st.setInt(1,id);
 			 
-			 int arrowsAffected = st.executeUpdate();
-			 if(arrowsAffected > 0) {
-				 System.out.println("Delete complete!");
-			 }
-			 else {
-				 System.out.println("No id founded!");
-			 }
-				 
-			 
+			 st.executeUpdate();
 		}
 		catch(SQLException e) {
 			throw new DbException(e.getMessage());
