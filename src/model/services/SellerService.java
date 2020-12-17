@@ -14,4 +14,17 @@ private SellerDao dao = DaoFactory.createSellerDao();
 		return dao.findAll();
 				
 	}
+	
+	public void saveOrUpdate(Seller obj) {
+		if(obj.getId() == null) {
+			dao.insertSeller(obj);
+		}
+		else {
+			dao.updateSeller(obj);
+		}
+	}
+	
+	public void remove(Seller obj) {
+		dao.deleteById(obj.getId());
+	}
 }
